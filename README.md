@@ -2,8 +2,8 @@
 
 ● Integrantes do trio:
 
-Luciano Nunes da Costa Júnior
+Luciano Nunes da Costa Júnior (GU3005941)
 
-Renan Siqueira dos Santos
+Renan Siqueira dos Santos (GU3006131)
 
-Thiago Pinto Martins
+Thiago Pinto Martins (GU3005984)
