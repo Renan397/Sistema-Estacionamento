@@ -42,8 +42,8 @@
                             <li class="scroll-to-section"><a href="#top">Início</a></li>
                             <li class="scroll-to-section"><a href="#entrada_veiculos">Entrada de veículos</a></li>
                             <li class="scroll-to-section"><a href="#saida_veiculos">Saída de veículos</a></li>
-                            <li class="scroll-to-section"><a href="#listar_veiculos">Listar veículos</a></li>
-                            <li class="scroll-to-section"><a href="#schedule">Horários</a></li>
+ 
+                            <li class="main-button"><a href="#">Deletar veículo</a></li>
                         </ul>        
                         <a class='menu-trigger'>
                             <span>Menu</span>
@@ -63,63 +63,33 @@
                         <img src="assets/images/line-dec.png" alt="waves">
                         <p>Você está na página de controle da POO Parking, abaixo estão algumas ações possíveis dentro de nosso sistema.</p>
                     </div>
-                </div>
+    <div class="container" id="entrada_veiculos">
+    <center><h2>Entrada de veículo</em></h2>
+    <img src="assets/images/line-dec.png" alt="waves"></center>
 
-                    <div class="col-6" id="entrada_veiculos">
-                    <center><h2>Entrada de veículo</em></h2>
-                    <img src="assets/images/line-dec.png" alt="waves"></center>
-
-                    <form id="form_entrada" action="">
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Nome</label>
-                    <input type="text" require="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o nome do cliente...">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Telefone</label>
-                    <input type="text" require="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o telefone do cliente...">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Veículo</label>
-                    <input type="text" require="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o veículo do cliente...">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Placa do veículo</label>
-                    <input type="text" require="required" class="form-control" maxlength="7" id="exampleFormControlInput1" placeholder="Digite aqui a placa veículo do cliente...">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">Hora da chegada</label>
-                    <input type="time" require="required" min="08:00" max="19:00" class="form-control" id="exampleFormControlInput1">
-                </div>
-                <center><button class="btn btn-primary" type="submit" style="background-color: orangered;">Registrar</button><br><br></center>
-                    </form>  
-                    </div>
-
-                    <div class="col-6" id="saida_veiculos">
-                    <center><h2>Saída de veículo</em></h2>
-                    <img src="assets/images/line-dec.png" alt="waves"></center>
-                    <form id="form_saida" action="">
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Nome</label>
-                    <input type="text" require="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o nome do cliente...">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Telefone</label>
-                    <input type="text" require="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o telefone do cliente...">
-                </div>
-                <center><button class="btn btn-primary" type="submit" style="background-color: orangered;">Registrar</button><br><br></center>
-                    </form>
-                    </div>
-
-                    <div class="col-lg-6 offset-lg-3" id="listar_veiculos">
-                    <div class="section-heading">
-                        <h2>Listar veículos</em></h2>
-                        <img src="assets/images/line-dec.png" alt="waves">
-                        <form id="form_listar" action="">
-                <center><button class="btn btn-primary" type="submit" style="background-color: orangered;">Listar</button><br><br></center>
-                        </form>
-                    </div>
-                </div>
-    </div>
+    <form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Nome</label>
+    <input type="text" require="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o nome do cliente...">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Telefone</label>
+    <input type="text" require="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o telefone do cliente...">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Veículo</label>
+    <input type="text" require="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o veículo do cliente...">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Placa do veículo</label>
+    <input type="text" require="required" class="form-control" maxlength="7" id="exampleFormControlInput1" placeholder="Digite aqui a placa veículo do cliente...">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Hora da chegada</label>
+    <input type="time" min="08:00" max="19:00" class="form-control" id="exampleFormControlInput1">
+  </div>
+  <center><button class="btn btn-primary" type="submit" style="background-color: orangered;">Enviar</button><br><br></center>
+    </form>
     </div>
     </div>
     </section>
@@ -193,140 +163,25 @@
             </div>
         </div>
     </footer>
-    <?php
- include_once "config/config.php";
- $img_files = array();
- $img_files[9] = $img."logo_whatsapp.png";
- $img_files[10] = $img."logo_facebook.png";
- $img_files[11] = $img."logo_instagram.png";
-?>
-<html>
-<style>
-    .img_footer {
-        width: 50px;
-        height: 50px;
-        transition: 0.5s;
-    }
 
-    .img_footer:hover {
-        transform: scale(1.1);
-    }
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
 
-    .img_LogoFooter {
-        width: 250px;
-        height: 250px;
-    }
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
 
-    #myFooter {
-        background-color: #01477a;
-        color: white;
-        padding-top: 30px;
-    }
+    <!-- Plugins -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script> 
+    <script src="assets/js/mixitup.js"></script> 
+    <script src="assets/js/accordions.js"></script>
+    
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
 
-    #myFooter .footer-copyright {
-        background-color: #0164ac;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        text-align: center;
-    }
-
-    #myFooter .row {
-        margin-bottom: 60px;
-    }
-
-    #myFooter .navbar-brand {
-        margin-top: 45px;
-        height: 65px;
-    }
-
-    #myFooter .footer-copyright p {
-        margin: 10px;
-        color: #ccc;
-    }
-
-    #myFooter ul {
-        list-style-type: none;
-        padding-left: 0;
-        line-height: 1.7;
-    }
-
-    #myFooter h5 {
-        font-size: 18px;
-        color: white;
-        font-weight: bold;
-        margin-top: 30px;
-    }
-
-    #myFooter h2 a {
-        font-size: 50px;
-        text-align: center;
-        color: #fff;
-    }
-
-    #myFooter a {
-        color: #d2d1d1;
-        text-decoration: none;
-    }
-
-    #myFooter a:hover,
-    #myFooter a:focus {
-        text-decoration: none;
-        color: white;
-    }
-
-    #myFooter .social-networks {
-        text-align: center;
-        padding-top: 30px;
-        padding-bottom: 16px;
-    }
-
-    #myFooter .social-networks a {
-        font-size: 32px;
-        color: #f9f9f9;
-        padding: 10px;
-        transition: 0.2s;
-    }
-
-    #myFooter .social-networks a:hover {
-        text-decoration: none;
-    }
-
-    #myFooter .facebook:hover {
-        color: #0077e2;
-    }
-
-    #myFooter .instagram:hover {
-        color: purple;
-    }
-
-    #myFooter .twitter:hover {
-        color: #00aced;
-    }
-
-    #myFooter .btn {
-        color: white;
-        background-color: #d84b6b;
-        border-radius: 20px;
-        border: none;
-        width: 150px;
-        display: block;
-        margin: 0 auto;
-        margin-top: 10px;
-        line-height: 25px;
-    }
-
-
-    @media screen and (max-width: 767px) {
-        #myFooter {
-            text-align: center;
-        }
-    }
-</style>
-<footer id="myFooter">
-  
-</footer>
-
-</html>
   </body>
 </html>
 
