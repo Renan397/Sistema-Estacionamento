@@ -32,7 +32,7 @@
       </div>
     </div>
 
-    <header style="background-color: #006400;" class="header-area header-sticky">
+    <header style="background-color: #696969;" class="header-area header-sticky">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -40,8 +40,8 @@
                         <a href="#" class="logo">POO<em> Parking</em></a>
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#top">Início</a></li>
-                            <li class="scroll-to-section"><a href="#features">Entrada de veículos</a></li>
-                            <li class="scroll-to-section"><a href="#our-classes">Saída de veículos</a></li>
+                            <li class="scroll-to-section"><a href="#entrada_veiculos">Entrada de veículos</a></li>
+                            <li class="scroll-to-section"><a href="#saida_veiculos">Saída de veículos</a></li>
  
                             <li class="main-button"><a href="#">Deletar veículo</a></li>
                         </ul>        
@@ -54,7 +54,7 @@
         </div>
     </header>
    
-    <section class="section" id="features">
+    <section class="section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
@@ -63,13 +63,38 @@
                         <img src="assets/images/line-dec.png" alt="waves">
                         <p>Você está na página de controle da POO Parking, abaixo estão algumas ações possíveis dentro de nosso sistema.</p>
                     </div>
-                </div>
+    <div class="container" id="entrada_veiculos">
+    <center><h2>Entrada de veículo</em></h2>
+    <img src="assets/images/line-dec.png" alt="waves"></center>
+
+    <form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Nome</label>
+    <input type="text" require="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o nome do cliente...">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Telefone</label>
+    <input type="text" require="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o telefone do cliente...">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Veículo</label>
+    <input type="text" require="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o veículo do cliente...">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Placa do veículo</label>
+    <input type="text" require="required" class="form-control" maxlength="7" id="exampleFormControlInput1" placeholder="Digite aqui a placa veículo do cliente...">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Hora da chegada</label>
+    <input type="time" min="08:00" max="19:00" class="form-control" id="exampleFormControlInput1">
+  </div>
+  <center><button class="btn btn-primary" type="submit" style="background-color: orangered;">Enviar</button><br><br></center>
+    </form>
+    </div>
+    </div>
     </section>
 
-    <div class="container">
-    <form action=""></form>
-
-    </div>
+    
 
     <center>
     <section class="section" id="schedule" style="border-radius: 3%;">
