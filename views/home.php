@@ -39,7 +39,7 @@
                     <nav class="main-nav">
                         <a href="#" class="logo">POO<em> Parking</em></a>
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="#top">Início</a></li>
+                            <li class="scroll-to-section"><a href="#entrada">Início</a></li>
                             <li class="scroll-to-section"><a href="#entrada_veiculos">Entrada de veículos</a></li>
                             <li class="scroll-to-section"><a href="#saida_veiculos">Saída de veículos</a></li>
                             <li class="scroll-to-section"><a href="#listar_veiculos">Listar veículos</a></li>
@@ -58,7 +58,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
-                    <div class="section-heading">
+                    <div id="entrada" class="section-heading">
                         <h2>Bem <em>Vindo</em></h2>
                         <img src="assets/images/line-dec.png" alt="waves">
                         <p>Você está na página de controle da POO Parking, abaixo estão algumas ações possíveis dentro de nosso sistema.</p>
