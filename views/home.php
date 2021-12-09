@@ -119,28 +119,28 @@
                             <tbody>
                                 <tr>
                                     <td class="day-time">Segunda-Feira</td>
-                                    <td class="monday ts-item show" data-tsmeta="monday">10:00AM - 11:30AM</td>
-                                    <td class="tuesday ts-item" data-tsmeta="tuesday">2:00PM - 3:30PM</td>
+                                    <td class="monday ts-item show" data-tsmeta="monday">08:00AM</td>
+                                    <td class="tuesday ts-item show" data-tsmeta="tuesday"> 21:00PM</td>
                                 </tr>
                                 <tr>
                                     <td class="day-time">Terça-Feira</td>
-                                    <td class="friday ts-item" data-tsmeta="friday">10:00AM - 11:30AM</td>
-                                    <td class="thursday friday ts-item" data-tsmeta="thursday" data-tsmeta="friday">2:00PM - 3:30PM</td>
+                                    <td class="friday ts-item show" data-tsmeta="friday">08:00AM</td>
+                                    <td class="thursday friday ts-item show" data-tsmeta="thursday" data-tsmeta="friday">21:00PM</td>
                                 </tr>
                                 <tr>
                                     <td class="day-time">Quarta-Feira</td>
-                                    <td class="tuesday ts-item" data-tsmeta="tuesday">10:00AM - 11:30AM</td>
-                                    <td class="monday ts-item show" data-tsmeta="monday">2:00PM - 3:30PM</td>
+                                    <td class="tuesday ts-item show" data-tsmeta="tuesday">08:00AM</td>
+                                    <td class="monday ts-item show" data-tsmeta="monday">21:00PM</td>
                                 </tr>
                                 <tr>
                                     <td class="day-time">Quinta-Feira</td>
-                                    <td class="wednesday ts-item" data-tsmeta="wednesday">10:00AM - 11:30AM</td>
-                                    <td class="friday ts-item" data-tsmeta="friday">2:00PM - 3:30PM</td>
+                                    <td class="wednesday ts-item show" data-tsmeta="wednesday">08:00AM</td>
+                                    <td class="friday ts-item show" data-tsmeta="friday">21:00PM</td>
                                 </tr>
                                 <tr>
                                     <td class="day-time">Sexta-Feira</td>
-                                    <td class="thursday ts-item" data-tsmeta="thursday">10:00AM - 11:30AM</td>
-                                    <td class="wednesday ts-item" data-tsmeta="wednesday">2:00PM - 3:30PM</td>
+                                    <td class="thursday ts-item show" data-tsmeta="thursday">08:00AM</td>
+                                    <td class="wednesday ts-item show" data-tsmeta="wednesday">21:00PM</td>
                                 </tr>
                             </tbody>
                         </table>
