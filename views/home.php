@@ -64,9 +64,15 @@
                         <p>Você está na página de controle da POO Parking, abaixo estão algumas ações possíveis dentro de nosso sistema.</p>
                     </div>
                 </div>
+    </section>
+
+    <div class="container">
+    <form action=""></form>
+
+    </div>
 
     <center>
-    <section class="section" id="schedule" style="border-radius: 5%;">
+    <section class="section" id="schedule" style="border-radius: 3%;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
@@ -124,7 +130,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; 2020 Training Studio
+                    <p>Copyright &copy; 2021 TRL Sites
                     
                     - Designed by <a rel="nofollow" href="https://templatemo.com" class="tm-text-link" target="_parent">TemplateMo</a></p>
                        
