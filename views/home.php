@@ -42,8 +42,8 @@
                             <li class="scroll-to-section"><a href="#top">Início</a></li>
                             <li class="scroll-to-section"><a href="#entrada_veiculos">Entrada de veículos</a></li>
                             <li class="scroll-to-section"><a href="#saida_veiculos">Saída de veículos</a></li>
-                            <li class="scroll-to-section"><a href="#listar_veiculos">Listar veículos</a></li>
-                            <li class="scroll-to-section"><a href="#schedule">Horários</a></li>
+ 
+                            <li class="main-button"><a href="#">Deletar veículo</a></li>
                         </ul>        
                         <a class='menu-trigger'>
                             <span>Menu</span>
@@ -63,63 +63,33 @@
                         <img src="assets/images/line-dec.png" alt="waves">
                         <p>Você está na página de controle da POO Parking, abaixo estão algumas ações possíveis dentro de nosso sistema.</p>
                     </div>
-                </div>
+    <div class="container" id="entrada_veiculos">
+    <center><h2>Entrada de veículo</em></h2>
+    <img src="assets/images/line-dec.png" alt="waves"></center>
 
-                    <div class="col-6" id="entrada_veiculos">
-                    <center><h2>Entrada de veículo</em></h2>
-                    <img src="assets/images/line-dec.png" alt="waves"></center>
-
-                    <form id="form_entrada" action="">
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Nome</label>
-                    <input type="text" require="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o nome do cliente...">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Telefone</label>
-                    <input type="text" require="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o telefone do cliente...">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Veículo</label>
-                    <input type="text" require="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o veículo do cliente...">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Placa do veículo</label>
-                    <input type="text" require="required" class="form-control" maxlength="7" id="exampleFormControlInput1" placeholder="Digite aqui a placa veículo do cliente...">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">Hora da chegada</label>
-                    <input type="time" require="required" min="08:00" max="19:00" class="form-control" id="exampleFormControlInput1">
-                </div>
-                <center><button class="btn btn-primary" type="submit" style="background-color: orangered;">Registrar</button><br><br></center>
-                    </form>  
-                    </div>
-
-                    <div class="col-6" id="saida_veiculos">
-                    <center><h2>Saída de veículo</em></h2>
-                    <img src="assets/images/line-dec.png" alt="waves"></center>
-                    <form id="form_saida" action="">
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Nome</label>
-                    <input type="text" require="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o nome do cliente...">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Telefone</label>
-                    <input type="text" require="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o telefone do cliente...">
-                </div>
-                <center><button class="btn btn-primary" type="submit" style="background-color: orangered;">Registrar</button><br><br></center>
-                    </form>
-                    </div>
-
-                    <div class="col-lg-6 offset-lg-3" id="listar_veiculos">
-                    <div class="section-heading">
-                        <h2>Listar veículos</em></h2>
-                        <img src="assets/images/line-dec.png" alt="waves">
-                        <form id="form_listar" action="">
-                <center><button class="btn btn-primary" type="submit" style="background-color: orangered;">Listar</button><br><br></center>
-                        </form>
-                    </div>
-                </div>
-    </div>
+    <form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Nome</label>
+    <input type="text" require="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o nome do cliente...">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Telefone</label>
+    <input type="text" require="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o telefone do cliente...">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Veículo</label>
+    <input type="text" require="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o veículo do cliente...">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Placa do veículo</label>
+    <input type="text" require="required" class="form-control" maxlength="7" id="exampleFormControlInput1" placeholder="Digite aqui a placa veículo do cliente...">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Hora da chegada</label>
+    <input type="time" min="08:00" max="19:00" class="form-control" id="exampleFormControlInput1">
+  </div>
+  <center><button class="btn btn-primary" type="submit" style="background-color: orangered;">Enviar</button><br><br></center>
+    </form>
     </div>
     </div>
     </section>
@@ -192,7 +162,8 @@
                 </div>
             </div>
         </div>
-
+    </footer>
+    
 </html>
   </body>
 </html>
