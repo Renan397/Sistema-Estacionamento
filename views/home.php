@@ -293,36 +293,7 @@
     }
 </style>
 <footer id="myFooter">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-1">
-                <h5>Início</h5>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                </ul>
-            </div>
-            <div class="col-sm-5"><br><br>
-                <ul>
-                    <li>
-                        <p><b>Telefone:</b> <br>(Gerente) Luciano Nunes - (11) 96035-1235<br> (Dev. Front-end) Renan Siqueira - (11) 96726-3940<br>(Dev. Back-end) Thiago Martins - (11) 94272-1549</p>
-                    </li><br>
-                    <li>
-                        <p><b>Endereço:</b> Av. Salgado Filho, 3501 - Centro, Guarulhos - SP</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-sm-3">
-                <div class="social-networks">
-                    <a href="https://api.whatsapp.com/send?phone=551196035-1235&text=sua%20mensagem" class="whatsapp" target="_blank"><img class='img_footer' src='<?= $img_files[9] ?>'></i></a>
-                    <a href="https://www.facebook.com/TRL-Sites-104897937613126" class="facebook" target="_blank"><img class='img_footer' src='<?= $img_files[10] ?>'></i></a>
-                    <a href="https://www.instagram.com/trlsites3/" class="instagram" target="_blank"><img class='img_footer' src='<?= $img_files[11] ?>'></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer-copyright">
-        <p>© 2021 Copyright - TRL Sites</p>
-    </div>
+  
 </footer>
 
 </html>
