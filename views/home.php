@@ -40,9 +40,10 @@
                         <a href="#" class="logo">POO<em> Parking</em></a>
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#entrada">Início</a></li>
-                            <li class="scroll-to-section"><a href="#entrada_veiculos">Entrada de veículos</a></li>
-                            <li class="scroll-to-section"><a href="#saida_veiculos">Saída de veículos</a></li>
-                            <li class="scroll-to-section"><a href="#listar_veiculos">Listar veículos</a></li>
+                            <li class="scroll-to-section"><a href="#entrada_veiculos">Entrada</a></li>
+                            <li class="scroll-to-section"><a href="#saida_veiculos">Saída</a></li>
+                            <li class="scroll-to-section"><a href="#listar_veiculos">Listar</a></li>
+                            <li class="scroll-to-section"><a href="#deletar_agendamento">Deletar agendamento</a></li>
                             <li class="scroll-to-section"><a href="#schedule">Horários</a></li>
                         </ul>        
                         <a class='menu-trigger'>
@@ -69,26 +70,30 @@
                     <center><h2>Entrada de veículo</em></h2>
                     <img src="assets/images/line-dec.png" alt="waves"></center>
 
-                    <form id="form_entrada" action="">
+                    <form id="form_entrada" action="Source/database/inserirAgenda.class.php">
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Nome</label>
-                    <input type="text" require="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o nome do cliente...">
+                    <input type="text" name="nome_cli" required="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o nome do cliente...">
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Telefone</label>
-                    <input type="text" require="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o telefone do cliente...">
+                    <input type="text" name="tel_cli" required="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o telefone do cliente...">
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Veículo</label>
-                    <input type="text" require="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o veículo do cliente...">
+                    <input type="text" name="veiculo_cli" required="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o veículo do cliente...">
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Placa do veículo</label>
-                    <input type="text" require="required" class="form-control" maxlength="7" id="exampleFormControlInput1" placeholder="Digite aqui a placa veículo do cliente...">
+                    <input type="text" name="placa_veiculo_cli" required="required" class="form-control" maxlength="7" id="exampleFormControlInput1" placeholder="Digite aqui a placa do veículo do cliente...">
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlSelect1">Hora da chegada</label>
-                    <input type="time" require="required" min="08:00" max="19:00" class="form-control" id="exampleFormControlInput1">
+                    <label for="exampleFormControlInput1">Data da entrada</label>
+                    <input type="date" name="data_entrada_cli" required="required" class="form-control" maxlength="7" id="exampleFormControlInput1">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Hora da entrada</label>
+                    <input type="time" name="hora_entrada_cli" required="required" min="08:00" max="19:00" class="form-control" id="exampleFormControlInput1">
                 </div>
                 <center><button class="btn btn-primary" type="submit" style="background-color: orangered;">Registrar</button><br><br></center>
                     </form>  
@@ -99,30 +104,38 @@
                     <img src="assets/images/line-dec.png" alt="waves"></center>
                     <form id="form_saida" action="">
                 <div class="form-group">
-                    <label for="exampleFormControlInput1">Nome</label>
-                    <input type="text" require="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o nome do cliente...">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Telefone</label>
-                    <input type="text" require="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o telefone do cliente...">
+                    <label for="exampleFormControlInput1">Placa do veículo</label>
+                    <input type="text" required="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui a placa do veículo do cliente...">
                 </div>
                 <center><button class="btn btn-primary" type="submit" style="background-color: orangered;">Registrar</button><br><br></center>
                     </form>
                     </div>
 
-                    <div class="col-lg-6 offset-lg-3" id="listar_veiculos">
+                    <div class="col-12" id="listar_veiculos">
                     <div class="section-heading">
                         <h2>Listar veículos</em></h2>
                         <img src="assets/images/line-dec.png" alt="waves">
-                        <form id="form_listar" action="">
+                        <form id="form_listar" action="Source/database/listarAgenda.class.php">
                 <center><button class="btn btn-primary" type="submit" style="background-color: orangered;">Listar</button><br><br></center>
                         </form>
                     </div>
                 </div>
+
+                <div class="col-lg-6 offset-lg-3" id="deletar_agendamento">
+                    <center><h2>Deletar agendamento</em></h2>
+                    <img src="assets/images/line-dec.png" alt="waves"></center>
+                    <form id="form_deletar_agendamento" action="Source/database/deletarAgenda.class.php">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Código do agendamento</label>
+                    <input type="text" name="codAgendamento" required="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o código do agendamento...">
+                </div>
+                <center><button class="btn btn-primary" type="submit" style="background-color: orangered;">Deletar</button><br><br></center>
+                    </form>
+                    </div>
     </div>
     </div>
     </div>
-    </section>
+    </section><br><br>
 
     
 
@@ -178,21 +191,119 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section><br><br>
     </center>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; 2021 TRL Sites
-                    
-                    - Designed by <a rel="nofollow" href="https://templatemo.com" class="tm-text-link" target="_parent">TemplateMo</a></p>
-                       
-                </div>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    
+    .img_footer {
+        width: 50px;
+        height: 50px;
+        transition: 0.5s;
+    }
+
+    .img_footer:hover {
+        transform: scale(1.1);
+    }
+
+    .img_LogoFooter {
+        width: 250px;
+        height: 250px;
+    }
+
+    #myFooter {
+        background-color: orangered;
+        color: white;
+        padding-top: 30px;
+    }
+
+    #myFooter .footer-copyright {
+        background-color: #ff6329;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        text-align: center;
+    }
+
+    #myFooter .row {
+        margin-bottom: 60px;
+    }
+
+    #myFooter .navbar-brand {
+        margin-top: 45px;
+        height: 65px;
+    }
+
+    #myFooter .footer-copyright p {
+        margin: 10px;
+        color: #ccc;
+    }
+
+    #myFooter ul {
+        list-style-type: none;
+        padding-left: 0;
+        line-height: 1.7;
+    }
+
+    #myFooter h5 {
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+    #myFooter h2 a {
+        font-size: 50px;
+        text-align: center;
+        color: #fff;
+    }
+
+    #myFooter a {
+        color: #d2d1d1;
+        text-decoration: none;
+    }
+
+    #myFooter a:hover,
+    #myFooter a:focus {
+        text-decoration: none;
+        color: white;
+    }
+
+    #myFooter .btn {
+        color: white;
+        background-color: #d84b6b;
+        border-radius: 20px;
+        border: none;
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+        line-height: 25px;
+    }
+
+
+    @media screen and (max-width: 767px) {
+        #myFooter {
+            text-align: center;
+        }
+    }
+</style>
+<footer id="myFooter">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h5>Início</h5>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                </ul>
+            </div>
             </div>
         </div>
-    </footer>
+    </div>
+    <div class="footer-copyright">
+        <p>© 2021 Copyright - TRL Sites</p>
+    </div>
+</footer>
 
     <!-- jQuery -->
     <script src="assets/js/jquery-2.1.0.min.js"></script>
