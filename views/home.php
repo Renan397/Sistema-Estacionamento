@@ -113,7 +113,7 @@
 
                     <div class="col-12" id="listar_veiculos">
                     <div class="section-heading">
-                        <h2>Listar veículos</em></h2>
+                        <h2>Listar agendamentos</em></h2>
                         <img src="assets/images/line-dec.png" alt="waves">
                         <form id="form_listar" action="Source/database/listarAgenda.class.php">
                 <center><button class="btn btn-primary" type="submit" style="background-color: orangered;">Listar</button><br><br></center>
