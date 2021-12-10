@@ -3,7 +3,7 @@ require __DIR__ . "/DBConnection.class.php";
 
 use Source\Database\Connect;
 
-$placaCli = $_REQUEST["codAgendamento"];
+$placaCli = $_REQUEST["placa_saida"];
 
 $delete = 
 "
