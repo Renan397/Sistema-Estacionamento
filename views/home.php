@@ -141,7 +141,7 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Veículo</label>
-                    <input type="text" name="veiculo_cli" required="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o veículo do cliente...">
+                    <input type="text" name="veiculo_cli" required="required" class="form-control" id="exampleFormControlInput1" placeholder="(Marca/Modelo/Cor)">
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Placa do veículo</label>
