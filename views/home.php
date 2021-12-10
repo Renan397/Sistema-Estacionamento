@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
+    <?php
+        session_start();
+    ?>
 
   <head>
 
@@ -97,6 +100,12 @@
                 </div>
                 <center><button class="btn btn-primary" type="submit" style="background-color: orangered;">Registrar</button><br><br></center>
                     </form>  
+                    <?PHP
+                        if(isset($_SESSION['msg'])){
+                            echo $_SESSION['msg'];
+                            unset ($_SESSION['msg']);
+                        }
+                    ?>
                     </div>
 
                     <div class="col-6" id="saida_veiculos">
