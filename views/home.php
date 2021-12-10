@@ -43,7 +43,6 @@
                             <li class="scroll-to-section"><a href="#entrada_veiculos">Entrada</a></li>
                             <li class="scroll-to-section"><a href="#saida_veiculos">Saída</a></li>
                             <li class="scroll-to-section"><a href="#listar_veiculos">Listar</a></li>
-                            <li class="scroll-to-section"><a href="#deletar_agendamento">Deletar agendamento</a></li>
                             <li class="scroll-to-section"><a href="#schedule">Horários</a></li>
                         </ul>        
                         <a class='menu-trigger'>
@@ -62,84 +61,11 @@
                     <div id="entrada" class="section-heading">
                         <h2>Bem <em>Vindo</em></h2>
                         <img src="assets/images/line-dec.png" alt="waves">
-                        <p>Você está na página de controle da POO Parking, abaixo estão algumas ações possíveis dentro de nosso sistema.</p>
+                        <p>Você está na página de controle da POO Parking, abaixo estão os horários de funcionamento do estabelecimento, e algumas ações possíveis dentro de nosso sistema.</p>
                     </div>
                 </div>
 
-                    <div class="col-6" id="entrada_veiculos">
-                    <center><h2>Entrada de veículo</em></h2>
-                    <img src="assets/images/line-dec.png" alt="waves"></center>
-
-                    <form id="form_entrada" method="POST" action="Source/database/inserirAgenda.class.php">
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Nome</label>
-                    <input type="text" name="nome_cli" required="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o nome do cliente...">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Telefone</label>
-                    <input type="text" name="tel_cli" maxlength="11" required="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o telefone do cliente...">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Veículo</label>
-                    <input type="text" name="veiculo_cli" required="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o veículo do cliente...">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Placa do veículo</label>
-                    <input type="text" name="placa_veiculo_cli" required="required" class="form-control" maxlength="7" id="exampleFormControlInput1" placeholder="Digite aqui a placa do veículo do cliente...">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Data da entrada</label>
-                    <input type="date" name="data_entrada_cli" required="required" class="form-control" maxlength="7" id="exampleFormControlInput1">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">Hora da entrada</label>
-                    <input type="time" name="hora_entrada_cli" required="required" min="08:00" max="19:00" class="form-control" id="exampleFormControlInput1">
-                </div>
-                <center><button class="btn btn-primary" type="submit" style="background-color: orangered;">Registrar</button><br><br></center>
-                    </form>  
-                    </div>
-
-                    <div class="col-6" id="saida_veiculos">
-                    <center><h2>Saída de veículo</em></h2>
-                    <img src="assets/images/line-dec.png" alt="waves"></center>
-                    <form id="form_saida" method="POST" action="">
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Placa do veículo</label>
-                    <input type="text" required="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui a placa do veículo do cliente...">
-                </div>
-                <center><button class="btn btn-primary" type="submit" style="background-color: orangered;">Registrar</button><br><br></center>
-                    </form>
-                    </div>
-
-                    <div class="col-12" id="listar_veiculos">
-                    <div class="section-heading">
-                        <h2>Listar agendamentos</em></h2>
-                        <img src="assets/images/line-dec.png" alt="waves">
-                        <form id="form_listar" action="Source/database/listarAgenda.class.php">
-                <center><button class="btn btn-primary" type="submit" style="background-color: orangered;">Listar</button><br><br></center>
-                        </form>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 offset-lg-3" id="deletar_agendamento">
-                    <center><h2>Deletar agendamento</em></h2>
-                    <img src="assets/images/line-dec.png" alt="waves"></center>
-                    <form id="form_deletar_agendamento" method="POST" action="Source/database/deletarAgenda.class.php">
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Código do agendamento</label>
-                    <input type="text" name="codAgendamento" required="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o código do agendamento...">
-                </div>
-                <center><button class="btn btn-primary" type="submit" style="background-color: orangered;">Deletar</button><br><br></center>
-                    </form>
-                    </div>
-    </div>
-    </div>
-    </div>
-    </section><br><br>
-
-    
-
-    <center>
+    <div class="col-12">
     <section class="section" id="schedule" style="border-radius: 3%;">
         <div class="container">
             <div class="row">
@@ -191,9 +117,77 @@
                 </div>
             </div>
         </div>
+    </section></div>
+    </div>
+    </div>
+    </div>
     </section><br><br>
-    </center>
 
+    <div class="container" id="formularios">
+    <div class="row">
+    <div class="col-6" id="entrada_veiculos">
+                    <center><h2>Entrada de veículo</em></h2>
+                    <img src="assets/images/line-dec.png" alt="waves"></center>
+
+                    <!-- Formulário de registro da entrada de veículos -->
+                    <form id="form_entrada" method="POST" action="Source/database/inserirAgenda.class.php">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Nome</label>
+                    <input type="text" name="nome_cli" required="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o nome do cliente...">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Telefone</label>
+                    <input type="text" name="tel_cli" maxlength="11" required="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o telefone do cliente...">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Veículo</label>
+                    <input type="text" name="veiculo_cli" required="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o veículo do cliente...">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Placa do veículo</label>
+                    <input type="text" name="placa_veiculo_cli" required="required" class="form-control" maxlength="7" id="exampleFormControlInput1" placeholder="Digite aqui a placa do veículo do cliente...">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Data da entrada</label>
+                    <input type="date" name="data_entrada_cli" required="required" class="form-control" maxlength="7" id="exampleFormControlInput1">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Hora da entrada</label>
+                    <input type="time" name="hora_entrada_cli" required="required" min="08:00" max="19:00" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <center><button class="btn btn-primary" type="submit" style="background-color: orangered;">Registrar</button><br><br></center>
+                    </form>
+    </div>
+                <!-- Fim do formulário de registro da entrada de veículos -->
+
+                <!-- Formulário de registro da saída de veículos -->
+                    <div class="col-6" id="saida_veiculos">
+                    <center><h2>Saída de veículo</em></h2>
+                    <img src="assets/images/line-dec.png" alt="waves"></center>
+                    <form id="form_saida" method="POST" action="">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Placa do veículo</label>
+                    <input type="text" required="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui a placa do veículo do cliente...">
+                </div>
+                <center><button class="btn btn-primary" type="submit" style="background-color: orangered;">Registrar</button><br><br></center>
+                    </form>
+                    </div>
+                <!-- Fim do formulário de saída de veículos -->
+
+                <!-- Formulário de listamentos dos agendamentos de vagas -->
+                    <div class="col-12" id="listar_veiculos">
+                    <div class="section-heading">
+                        <h2>Listar agendamentos</em></h2>
+                        <img src="assets/images/line-dec.png" alt="waves">
+                        <form id="form_listar" action="Source/database/listarAgenda.class.php">
+                <center><button class="btn btn-primary" type="submit" style="background-color: orangered;">Listar</button><br><br></center>
+                        </form>
+                    </div>
+                    </div>
+                <!-- Fim do formulário de listamento dos agendamentos de vagas -->
+                    </div>            
+    </div>
+    
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
     
