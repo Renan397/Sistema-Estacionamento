@@ -182,7 +182,7 @@ session_start();
                 <form id="form_saida" method="POST" action="Source/database/deletarAgenda.class.php">
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Placa do veículo</label>
-                        <input type="text" required="required" name="placa_saida" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui a placa do veículo do cliente...">
+                        <input type="text" required="required" maxlength="7" name="placa_saida" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui a placa do veículo do cliente...">
                     </div>
                     <center><button class="btn btn-primary" type="submit" style="background-color: orangered;">Registrar</button><br><br></center>
                 </form>
