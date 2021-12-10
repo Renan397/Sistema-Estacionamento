@@ -70,14 +70,14 @@
                     <center><h2>Entrada de veículo</em></h2>
                     <img src="assets/images/line-dec.png" alt="waves"></center>
 
-                    <form id="form_entrada" action="Source/database/inserirAgenda.class.php">
+                    <form id="form_entrada" method="POST" action="Source/database/inserirAgenda.class.php">
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Nome</label>
                     <input type="text" name="nome_cli" required="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o nome do cliente...">
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Telefone</label>
-                    <input type="text" name="tel_cli" required="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o telefone do cliente...">
+                    <input type="text" name="tel_cli" maxlength="11" required="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o telefone do cliente...">
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Veículo</label>
@@ -102,7 +102,7 @@
                     <div class="col-6" id="saida_veiculos">
                     <center><h2>Saída de veículo</em></h2>
                     <img src="assets/images/line-dec.png" alt="waves"></center>
-                    <form id="form_saida" action="">
+                    <form id="form_saida" method="POST" action="">
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Placa do veículo</label>
                     <input type="text" required="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui a placa do veículo do cliente...">
@@ -124,7 +124,7 @@
                 <div class="col-lg-6 offset-lg-3" id="deletar_agendamento">
                     <center><h2>Deletar agendamento</em></h2>
                     <img src="assets/images/line-dec.png" alt="waves"></center>
-                    <form id="form_deletar_agendamento" action="Source/database/deletarAgenda.class.php">
+                    <form id="form_deletar_agendamento" method="POST" action="Source/database/deletarAgenda.class.php">
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Código do agendamento</label>
                     <input type="text" name="codAgendamento" required="required" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o código do agendamento...">
