@@ -25,3 +25,5 @@ delete from tb_agenda_veiculos where placa_veiculo_cli = "ABC1234";
 
 #Modelo de select
 select *from tb_agenda_veiculos;
+
+#Teste
