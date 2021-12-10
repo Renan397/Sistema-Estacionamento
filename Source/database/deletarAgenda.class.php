@@ -15,7 +15,7 @@ try {
     $query = Connect::getInstance()->query($delete);
     header("Location: ../../");
     $_SESSION['msg1'] = "<center><p style='padding: 10px; border: 1px solid gray; border-radius: 3px; margin: 10px;
-    font-size: 18px; border-color: #87c940; color: #fff; background-color: #a0d468; width: 290px;'>Saida com exito!</p></center><br>";
+    font-size: 18px; border-color: #87c940; color: #fff; background-color: #a0d468; width: 290px;'>Saída efetuada com sucesso!</p></center><br>";
     header("Location: ../../#saida_veiculos");
 } catch (PDOException $exception) {
     die($exception);
