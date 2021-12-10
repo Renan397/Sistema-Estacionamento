@@ -1,21 +1,20 @@
 <?php
+require __DIR__ . "/DBConnection.class.php";
 
-include_once 'DBConnection.class.php';
+use Source\Database\Connect;
 
-function listarAgenda() {
-    $DBConnection = new DBConnection();
-    $sqlCmd = "SELECT *FROM tb_agenda_veiculos;";
-    $resultSet =  $DBConnection->query($sqlCmd);
-    if ($resultSet) {
-        while ( $linha = mysqli_fetch_assoc($resultSet)) {
-            print_r($linha);
-            echo "<hr>";
-        };
-    }
-    else {
-        echo "<center>Não foi possível listar os agendamentos.</center>";
-    }
-   
-};
-listarAgenda();
-?>
+$viewList = 
+"
+    SELECT*FROM tb_agenda_veiculos;
+";
+
+try {
+    $query = Connect::getInstance()->query($viewList);
+    var_dump([
+        $query,
+        $query -> rowCount(),
+        $query -> fetchAll(),
+    ]);
+} catch (PDOException $exception) {
+    die($exception);
+}
