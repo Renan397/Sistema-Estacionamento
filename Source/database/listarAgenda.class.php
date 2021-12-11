@@ -17,7 +17,6 @@
 </head>
 
 <?php
-session_start();
 require __DIR__ . "/DBConnection.class.php";
 
 use Source\Database\Connect;
@@ -68,5 +67,6 @@ $agendamentos = listaAgenda();
                <?php endforeach; ?>
             </tbody>
             </table>
+            <center><a href="../../"><button class="btn btn-primary" style="background-color: orangered;">Voltar</button></a><br><br></center>
 
 

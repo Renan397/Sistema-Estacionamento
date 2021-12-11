@@ -184,12 +184,20 @@ session_start();
                         <label for="exampleFormControlInput1">Placa do veículo</label>
                         <input type="text" required="required" maxlength="7" name="placa_saida" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui a placa do veículo do cliente...">
                     </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Hora da saída</label>
+                        <input type="time" name="hora_saida_cli" required="required" min="08:00" max="19:00" class="form-control" id="exampleFormControlInput1">
+                  </div>
                     <center><button class="btn btn-primary" type="submit" style="background-color: orangered;">Registrar</button><br><br></center>
                 </form>
                 <?PHP
                 if (isset($_SESSION['msg1'])) {
                     echo $_SESSION['msg1'];
                     unset($_SESSION['msg1']);
+                }
+                if (isset($_SESSION['retornoPagamento'])) {
+                    echo $_SESSION['retornoPagamento'];
+                    unset($_SESSION['retornoPagamento']);
                 }
                 ?>
             </div>
@@ -204,12 +212,6 @@ session_start();
                     <form id="form_listar" action="Source/database/listarAgenda.class.php">
                         <center><button class="btn btn-primary" type="submit" style="background-color: orangered;">Listar</button><br><br></center>
                     </form>
-                    <?PHP
-                if (isset($_SESSION['listaAgenda'])) {
-                    echo $_SESSION['listaAgenda'];
-                    unset($_SESSION['listaAgenda']);
-                }
-                ?>
                 </div>
             </div>
             <!-- Fim do formulário de listamento dos agendamentos de vagas -->
