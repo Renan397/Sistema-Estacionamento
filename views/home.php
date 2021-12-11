@@ -196,7 +196,7 @@ session_start();
 
             <!-- Fim do formulário de saída de veículos -->
 
-            <!-- Formulário de listamentos dos agendamentos de vagas -->
+            <!-- Formulário de listamento dos agendamentos de vagas -->
             <div class="col-12" id="listar_veiculos">
                 <div class="section-heading">
                     <h2>Listar agendamentos</em></h2>
@@ -204,6 +204,12 @@ session_start();
                     <form id="form_listar" action="Source/database/listarAgenda.class.php">
                         <center><button class="btn btn-primary" type="submit" style="background-color: orangered;">Listar</button><br><br></center>
                     </form>
+                    <?PHP
+                if (isset($_SESSION['listaAgenda'])) {
+                    echo $_SESSION['listaAgenda'];
+                    unset($_SESSION['listaAgenda']);
+                }
+                ?>
                 </div>
             </div>
             <!-- Fim do formulário de listamento dos agendamentos de vagas -->
