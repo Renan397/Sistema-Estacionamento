@@ -1,3 +1,21 @@
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+    <title>Atividade de LDI (4º bimestre)</title>
+
+    <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../../assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="../../assets/css/templatemo-training-studio.css">
+
+</head>
+
 <?php
 session_start();
 require __DIR__ . "/DBConnection.class.php";
@@ -31,5 +49,10 @@ try {
     font-size: 18px; border-color: #87c940; color: #fff; background-color: #a0d468; width: 290px;'>Agendamento efetuado com sucesso!</p></center><br>";
     header("Location: ../../#entrada_veiculos");
 } catch (PDOException $exception) {
-    die("OPS! Erro ao enviar.");
+    die(
+        "<center><p style='padding: 10px; border: 1px solid gray; border-radius: 3px; margin: 10px;
+        font-size: 18px; border-color: #87c940; color: #fff; background-color: red; width: 290px;'>OPS! Não foi possível fazer o registro.</p></center><br>
+        <center><a href='../../'><button class='btn btn-primary' style='background-color: orangered;'>Voltar</button></a><br><br></center>
+        " 
+    ); 
 }

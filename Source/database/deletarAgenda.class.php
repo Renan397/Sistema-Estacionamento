@@ -9,6 +9,7 @@ $hora_saida = $_REQUEST["hora_saida_cli"];
 $taxa_hora = 6.00;
 
 try {
+    //Registro e resultado do pagamento
     $select = 
     "
     SELECT *FROM tb_agenda_veiculos WHERE placa_veiculo_cli = '{$placaCli}';
@@ -27,6 +28,12 @@ try {
     $_SESSION["retornoPagamento"] = "
     <center><p style='color:black; font-size: 18px;'>O total a ser pago é: R$ $horas_a_pagar,00</p></center>
     ";
+} catch (PDOException $exception) {
+    die($exception);
+}
+
+try {
+    //Registro e resultado da saída do veículo
     $delete = 
     "
         DELETE FROM tb_agenda_veiculos WHERE placa_veiculo_cli = '{$placaCli}';
