@@ -46,7 +46,7 @@ try {
     $query = Connect::getInstance()->query($inset);
     header("Location: ../../");
     $_SESSION['msg'] = "<center><p style='padding: 10px; border: 1px solid gray; border-radius: 3px; margin: 10px;
-    font-size: 18px; border-color: #87c940; color: #fff; background-color: #a0d468; width: 290px;'>Agendamento efetuado com sucesso!</p></center><br>";
+    font-size: 18px; border-color: #87c940; color: #fff; background-color: #a0d468; width: 290px;'>Entrada efetuada com sucesso!</p></center><br>";
     header("Location: ../../#entrada_veiculos");
 } catch (PDOException $exception) {
     die(
