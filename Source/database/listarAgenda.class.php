@@ -34,12 +34,10 @@ try {
     die($exception);
 }
 }
-?>
-
-<?php
 $agendamentos = listaAgenda();
 ?>
-    <table class='table table-striped table-bordered table-hover'>
+
+<table class='table table-striped table-bordered table-hover'>
             <thead>
                 <tr class='active'>
                     <th>Código do cliente</th>

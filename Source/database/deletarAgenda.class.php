@@ -4,10 +4,13 @@ require __DIR__ . "/DBConnection.class.php";
 
 use Source\Database\Connect;
 
+if ($_REQUEST) {
+
 $placaCli = $_REQUEST["placa_saida"];
 $hora_saida = $_REQUEST["hora_saida_cli"];
 $taxa_hora = 6.00;
 
+function registraPagamento($placaCli, $hora_saida, $taxa_hora) {
 try {
     //Registro e resultado do pagamento
     $select = 
@@ -26,12 +29,14 @@ try {
     ";
     $query = Connect::getInstance()->query($insertPagamento);
     $_SESSION["retornoPagamento"] = "
-    <center><p style='color:black; font-size: 18px;'>O total a ser pago é: R$ $horas_a_pagar,00</p></center>
+    <center><p style='color:black; font-size: 18px;'>O total a ser pago é: <span style='color: #007000;'>R$ $horas_a_pagar,00</span></p></center>
     ";
 } catch (PDOException $exception) {
     die($exception);
 }
+};
 
+function deletaAgenda($placaCli) {
 try {
     //Registro e resultado da saída do veículo
     $delete = 
@@ -45,4 +50,9 @@ try {
 } catch (PDOException $exception) {
     die($exception);
 }
+};
+
+registraPagamento($placaCli, $hora_saida, $taxa_hora);
+deletaAgenda($placaCli);
+};
 ?>

@@ -22,6 +22,9 @@ require __DIR__ . "/DBConnection.class.php";
 
 use Source\Database\Connect;
 
+if ($_REQUEST) {
+    
+function inserirAgenda() {
 $nomeCli  = $_REQUEST["nome_cli"];
 $telCli   = $_REQUEST["tel_cli"];
 $carCli   = $_REQUEST["veiculo_cli"];
@@ -56,3 +59,10 @@ try {
         " 
     ); 
 }
+};
+inserirAgenda();
+}
+else {
+    echo "Nenhuma requisição foi feita.";
+}
+?>
