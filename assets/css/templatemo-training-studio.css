@@ -843,7 +843,8 @@ schedule
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #006400;
+  background-color: black;
+  border: 5px outset orangered;
 }
 
 #schedule table {

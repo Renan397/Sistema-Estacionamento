@@ -205,7 +205,7 @@ session_start();
             <!-- Fim do formulário de saída de veículos -->
 
             <!-- Formulário de listamento dos agendamentos de vagas -->
-            <div class="col-12" id="listar_veiculos">
+            <div class="col-6" id="listar_veiculos">
                 <div class="section-heading">
                     <h2>Listar agendamentos</em></h2>
                     <img src="assets/images/line-dec.png" alt="waves">
@@ -215,6 +215,23 @@ session_start();
                 </div>
             </div>
             <!-- Fim do formulário de listamento dos agendamentos de vagas -->
+            
+             <!-- Formulário de listamento dos agendamentos de vagas com filtro -->
+            <div class="col-6" id="listar_veiculos_filtro">
+                <div class="section-heading">
+                    <h2>Listar agendamentos com filtro</em></h2>
+                    <img src="assets/images/line-dec.png" alt="waves">
+                    <form id="form_listar_filtro" action="Source/database/listarAgenda_filtro.class.php">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Placa do veículo</label>
+                        <input type="text" required="required" maxlength="7" name="placa_filtro" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui a placa do veículo do cliente...">
+                    </div>    
+                    <center><button class="btn btn-primary" type="submit" style="background-color: orangered;">Listar</button><br><br></center>
+                    </form>
+                </div>
+            </div>
+            <!-- Fim do formulário de listamento dos agendamentos de vagas com filtro -->
+
         </div>
     </div>
 
