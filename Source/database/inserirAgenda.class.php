@@ -55,10 +55,10 @@ try {
     font-size: 18px; border-color: #87c940; color: #fff; background-color: #a0d468; width: 290px;'>Entrada efetuada com sucesso!</p></center><br>";
     header("Location: ../../#entrada_veiculos");
 } catch (PDOException $exception) {
-        header("Location: ../../");
-        $_SESSION['msg_erro'] = "<center><p style='padding: 10px; border: 1px solid gray; border-radius: 3px; margin: 10px;
-        font-size: 18px; border-color: #e8273b; color: #fff; background-color: #e8273b; width: 290px;'>OPS! Veículo já cadastrado.</p></center><br>"; 
-        header("Location: ../../#entrada_veiculos");
+    header("Location: ../../");
+    $_SESSION['msg_erro'] = "<center><p style='padding: 10px; border: 1px solid gray; border-radius: 3px; margin: 10px;
+    font-size: 18px; border-color: #e8273b; color: #fff; background-color: #e8273b; width: 290px;'>OPS! Veículo já cadastrado.</p></center><br>"; 
+    header("Location: ../../#entrada_veiculos");
 }
 };
 inserirAgenda();

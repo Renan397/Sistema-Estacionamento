@@ -11,6 +11,22 @@ if ($_REQUEST) {
     $hora_saida = $_REQUEST["hora_saida_cli"];
     $taxa_hora = 6.00;
 
+    function deletaAgenda($placaCli)
+    {
+        try {
+            //Registro e resultado da saída do veículo
+            $delete =
+                "
+        DELETE FROM tb_agenda_veiculos WHERE placa_veiculo_cli = '{$placaCli}';";
+            $query = Connect::getInstance()->query($delete);
+            $_SESSION['msg1'] = "<center><p style='padding: 10px; border: 1px solid gray; border-radius: 3px; margin: 10px;
+    font-size: 18px; border-color: #87c940; color: #fff; background-color: #a0d468; width: 290px;'>Saída efetuada com sucesso!</p></center><br>";
+            header("Location: ../../#saida_veiculos");
+        } catch (PDOException $exception) {
+            die($exception);
+        }
+    };
+
     function registraPagamento($codigoCli, $placaCli, $hora_saida, $taxa_hora)
     {
         try {
@@ -39,22 +55,6 @@ if ($_REQUEST) {
         }
     };
 
-    function deletaAgenda($placaCli)
-    {
-        try {
-            //Registro e resultado da saída do veículo
-            $delete =
-                "
-        DELETE FROM tb_agenda_veiculos WHERE placa_veiculo_cli = '{$placaCli}';";
-            $query = Connect::getInstance()->query($delete);
-            $_SESSION['msg1'] = "<center><p style='padding: 10px; border: 1px solid gray; border-radius: 3px; margin: 10px;
-    font-size: 18px; border-color: #87c940; color: #fff; background-color: #a0d468; width: 290px;'>Saída efetuada com sucesso!</p></center><br>";
-            header("Location: ../../#saida_veiculos");
-        } catch (PDOException $exception) {
-            die($exception);
-        }
-    };
-
-    registraPagamento($codigoCli, $placaCli, $hora_saida, $taxa_hora);
     deletaAgenda($placaCli);
+    registraPagamento($codigoCli, $placaCli, $hora_saida, $taxa_hora);
 };
