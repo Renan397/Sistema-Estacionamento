@@ -39,7 +39,7 @@ $H = substr("{$hrEntrada}", 0, -3);
 $ms = substr("{$hrEntrada}", 3);
 $hrEntrada = date("$H$ms");
 
-$inset =
+$insert =
     "
     INSERT INTO tb_agenda_veiculos (nome_cli, telefone_cli, veiculo_cli, placa_veiculo_cli, data_entrada_veiculo_cli, hora_entrada_veiculo_cli)
     VALUES ('{$nomeCli}', '{$telCli}', '{$carCli}', '{$placaCli}', '{$datEntrada}', '{$hrEntrada}00');
@@ -49,7 +49,7 @@ $inset =
 ";
 
 try {
-    $query = Connect::getInstance()->query($inset);
+    $query = Connect::getInstance()->query($insert);
     header("Location: ../../");
     $_SESSION['msg'] = "<center><p style='padding: 10px; border: 1px solid gray; border-radius: 3px; margin: 10px;
     font-size: 18px; border-color: #87c940; color: #fff; background-color: #a0d468; width: 290px;'>Entrada efetuada com sucesso!</p></center><br>";
