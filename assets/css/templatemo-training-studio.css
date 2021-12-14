@@ -328,18 +328,6 @@ header
   opacity: 1;
 }
 
-.header-area .main-nav .nav li:hover a,
-.header-area .main-nav .nav li a.active {
-  color: #ed563b!important;
-  opacity: 1;
-}
-
-.background-header .main-nav .nav li:hover a,
-.background-header .main-nav .nav li a.active {
-  color: #ed563b!important;
-  opacity: 1;
-}
-
 .header-area .main-nav .menu-trigger {
   cursor: pointer;
   display: block;
