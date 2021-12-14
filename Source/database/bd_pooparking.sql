@@ -8,11 +8,15 @@ telefone_cli char(11),
 veiculo_cli varchar(120),
 placa_veiculo_cli char(7) unique,
 data_entrada_veiculo_cli date,
-hora_entrada_veiculo_cli time,
-hora_saida_veiculo_cli time
+hora_entrada_veiculo_cli time
 );
 
 create table tb_agenda_pagamento (
+id_cli int not null primary key auto_increment,
+nome_cli varchar(120),
+placa_veiculo_cli char(7),
+hora_entrada_veiculo_cli time,
+hora_saida_veiculo_cli time,
 pagamento_total decimal(5,2)
 );
 

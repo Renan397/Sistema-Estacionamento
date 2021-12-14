@@ -43,6 +43,9 @@ $inset =
     "
     INSERT INTO tb_agenda_veiculos (nome_cli, telefone_cli, veiculo_cli, placa_veiculo_cli, data_entrada_veiculo_cli, hora_entrada_veiculo_cli)
     VALUES ('{$nomeCli}', '{$telCli}', '{$carCli}', '{$placaCli}', '{$datEntrada}', '{$hrEntrada}00');
+
+    INSERT INTO tb_agenda_pagamento (nome_cli, placa_veiculo_cli, hora_entrada_veiculo_cli)
+    VALUES ('{$nomeCli}', '{$placaCli}', '{$hrEntrada}00');
 ";
 
 try {

@@ -185,6 +185,10 @@ session_start();
                         <input type="text" required="required" maxlength="7" name="placa_saida" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui a placa do veículo do cliente...">
                     </div>
                     <div class="form-group">
+                        <label for="exampleFormControlInput1">Código do cliente</label>
+                        <input type="text" required="required" name="cod_cli" class="form-control" id="exampleFormControlInput1" placeholder="Digite aqui o código do cliente...">
+                    </div>
+                    <div class="form-group">
                         <label for="exampleFormControlInput1">Hora da saída</label>
                         <input type="time" name="hora_saida_cli" required="required" min="08:00" max="19:00" class="form-control" id="exampleFormControlInput1">
                   </div>
