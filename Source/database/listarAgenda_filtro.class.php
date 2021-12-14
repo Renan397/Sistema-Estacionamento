@@ -50,7 +50,6 @@ $agendamentos_filtro = listaAgenda_filtro();
                     <th>Placa do veículo</th>
                     <th>Data de entrada</th>
                     <th>Horário de entrada</th>
-                    <th>Horário de saída</th>
                 </tr>
             </thead>
             <tbody>
@@ -63,7 +62,6 @@ $agendamentos_filtro = listaAgenda_filtro();
                      <td><?=$agendamentos_filtro['placa_veiculo_cli']?></td>
                      <td><?=$agendamentos_filtro['data_entrada_veiculo_cli']?></td>
                      <td><?=$agendamentos_filtro['hora_entrada_veiculo_cli']?></td>
-                     <td><?=$agendamentos_filtro['hora_saida_veiculo_cli']?></td>
                     </tr>
                <?php endforeach; ?>
             </tbody>

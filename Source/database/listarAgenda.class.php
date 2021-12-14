@@ -47,7 +47,6 @@ $agendamentos = listaAgenda();
                     <th>Placa do veículo</th>
                     <th>Data de entrada</th>
                     <th>Horário de entrada</th>
-                    <th>Horário de saída</th>
                 </tr>
             </thead>
             <tbody>
@@ -60,7 +59,6 @@ $agendamentos = listaAgenda();
                      <td><?=$agendamentos['placa_veiculo_cli']?></td>
                      <td><?=$agendamentos['data_entrada_veiculo_cli']?></td>
                      <td><?=$agendamentos['hora_entrada_veiculo_cli']?></td>
-                     <td><?=$agendamentos['hora_saida_veiculo_cli']?></td>
                     </tr>
                <?php endforeach; ?>
             </tbody>
