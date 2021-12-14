@@ -35,7 +35,7 @@ session_start();
         </div>
     </div>
 
-    <header style="background-color: #696969;" class="header-area header-sticky">
+    <header style="background-color: #262626;" class="header-area header-sticky">
         <div class="container">
             <div class="row">
                 <div class="col-12">
