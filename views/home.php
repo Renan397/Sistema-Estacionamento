@@ -168,6 +168,10 @@ session_start();
                     echo $_SESSION['msg'];
                     unset($_SESSION['msg']);
                 }
+                if (isset($_SESSION['msg_erro'])) {
+                    echo $_SESSION['msg_erro'];
+                    unset($_SESSION['msg_erro']);
+                }
                 ?>
             </div>
             <!-- Fim do formulário de registro da entrada de veículos -->
