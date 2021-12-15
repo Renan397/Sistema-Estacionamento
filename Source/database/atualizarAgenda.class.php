@@ -27,7 +27,7 @@ if ($_REQUEST) {
         }
     };
 
-    function registraPagamento($codigoCli, $placaCli, $hora_saida, $taxa_hora)
+    function registraPagamento($codigoCli, $hora_saida, $taxa_hora)
     {
         try {
             //Registro e resultado do pagamento
