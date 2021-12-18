@@ -32,7 +32,7 @@ if ($_REQUEST) {
     ";
             $query = Connect::getInstance()->query($insertPagamento);
             $_SESSION["retornoPagamento"] = "
-    <center><p style='color:black; font-size: 18px;'>O total a ser pago é: <span style='color: #007000;'>R$ $horas_a_pagar,00</span> $H_saida_number e $H_entrada_number</p></center>
+    <center><p style='color:black; font-size: 18px;'>O total a ser pago é: <span style='color: #007000;'>R$ $horas_a_pagar,00</span></p></center>
     ";
         } catch (PDOException $exception) {
             die($exception);
