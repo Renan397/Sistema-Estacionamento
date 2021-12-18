@@ -194,7 +194,7 @@ session_start();
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Hora da saída</label>
-                        <input type="time" name="hora_saida_cli" required="required" min="08:00" max="19:00" class="form-control" id="exampleFormControlInput1">
+                        <input type="time" name="hora_saida_cli" required="required" min="08:00" max="21:00" class="form-control" id="exampleFormControlInput1">
                   </div>
                     <center><button class="btn btn-primary" type="submit" style="background-color: orangered;">Registrar</button><br><br></center>
                 </form>
